@@ -1,0 +1,18 @@
+{{! ---
+general: u-grid-col
+============================================
+
+Requirements:
+- (only hbs)
+
+Options:
+- gridColClasses {String} - Modifier classes
+
+Important Notes:
+
+--- }}
+
+
+<div class="u-grid-col{{#if options.columns}} is-col-{{options.columns}}{{/if}}">
+	{{{yield}}}
+</div>

@@ -1,0 +1,29 @@
+.header {
+	background-color: transparent;
+	padding: 1rem 0;
+	transition: background-color $transition-duration $transition-ease-method;
+
+	&.is-sticky {
+		@include transition(top 300ms ease, background-color $transition-duration $transition-ease-method);
+		@include prefix('transition-delay', 600ms);
+
+		background-color: color(white);
+		border-bottom: 1px solid darken(color(highlight-light), 10);
+		top: 0;
+	}
+
+	.header__inner {
+		lost-flex-container: row;
+		align-items: center;
+	}
+}
+
+.r-header-left {
+	lost-column: 1/2 6 0px;
+}
+
+.r-header-right {
+	lost-column: 1/2 6 0px;
+
+	z-index: 10;
+}

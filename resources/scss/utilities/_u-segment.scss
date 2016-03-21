@@ -1,0 +1,25 @@
+/* ===================================================
+Global: segment
+=================================================== */
+
+.u-segment {
+	margin-bottom: 2rem;
+
+	.segment__headline {
+		font-size: 1.9rem;
+		font-weight: $font-light;
+		line-height: 1.35;
+
+		margin: 0 0 1rem 0;
+		padding: 1rem;
+		text-align: center;
+
+		color: #000;
+		background: lighten(color(highlight-main), 20);
+	}
+
+	.segment__content {
+		display: flex;
+		justify-content: center;
+	}
+}

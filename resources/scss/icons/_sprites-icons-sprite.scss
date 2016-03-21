@@ -1,0 +1,155 @@
+@mixin sprites-bg-svg() {
+	background-image: url("../img/sprites/sprites-icons-sprite.svg");
+}
+%sprites-bg-svg {
+	@include sprites-bg-svg();
+}
+@mixin sprites-bg-size() {
+	background-size: 2055px 300px;
+}
+%sprites-bg-size {
+	@include sprites-bg-size();
+}
+
+@mixin sprites-bg-png() {
+	background-image: url("../img/sprites/sprites-icons-sprite-medium.png");
+}
+%sprites-bg-png {
+	@include sprites-bg-png();
+}
+@mixin sprites-github-mark() {
+	@include sprites-bg-size;
+	@include sprites-bg-svg;
+	width: 33px;
+	height: 32px;
+	background-position: 0 0;
+	@at-root .no-svg & {
+		@include sprites-bg-png;
+	}
+}
+
+%sprites-github-mark {
+	@include sprites-github-mark();
+}
+
+@mixin sprites-veams-components() {
+	@include sprites-bg-size;
+	@include sprites-bg-svg;
+	width: 202px;
+	height: 79px;
+	background-position: -40px 0;
+	@at-root .no-svg & {
+		@include sprites-bg-png;
+	}
+}
+
+%sprites-veams-components {
+	@include sprites-veams-components();
+}
+
+@mixin sprites-veams-generator() {
+	@include sprites-bg-size;
+	@include sprites-bg-svg;
+	width: 202px;
+	height: 79px;
+	background-position: -250px 0;
+	@at-root .no-svg & {
+		@include sprites-bg-png;
+	}
+}
+
+%sprites-veams-generator {
+	@include sprites-veams-generator();
+}
+
+@mixin sprites-veams-generator-symbol() {
+	@include sprites-bg-size;
+	@include sprites-bg-svg;
+	width: 137px;
+	height: 117px;
+	background-position: -460px 0;
+	@at-root .no-svg & {
+		@include sprites-bg-png;
+	}
+}
+
+%sprites-veams-generator-symbol {
+	@include sprites-veams-generator-symbol();
+}
+
+@mixin sprites-veams-js() {
+	@include sprites-bg-size;
+	@include sprites-bg-svg;
+	width: 202px;
+	height: 79px;
+	background-position: -605px 0;
+	@at-root .no-svg & {
+		@include sprites-bg-png;
+	}
+}
+
+%sprites-veams-js {
+	@include sprites-veams-js();
+}
+
+@mixin sprites-veams-methodology() {
+	@include sprites-bg-size;
+	@include sprites-bg-svg;
+	width: 202px;
+	height: 79px;
+	background-position: -815px 0;
+	@at-root .no-svg & {
+		@include sprites-bg-png;
+	}
+}
+
+%sprites-veams-methodology {
+	@include sprites-veams-methodology();
+}
+
+@mixin sprites-veams-sass() {
+	@include sprites-bg-size;
+	@include sprites-bg-svg;
+	width: 202px;
+	height: 79px;
+	background-position: -1025px 0;
+	@at-root .no-svg & {
+		@include sprites-bg-png;
+	}
+}
+
+%sprites-veams-sass {
+	@include sprites-veams-sass();
+}
+
+@mixin sprites-veams-std() {
+	@include sprites-bg-size;
+	@include sprites-bg-svg;
+	width: 209px;
+	height: 61px;
+	background-position: -1235px 0;
+	@at-root .no-svg & {
+		@include sprites-bg-png;
+	}
+}
+
+%sprites-veams-std {
+	@include sprites-veams-std();
+}
+
+@mixin sprites-veams-std-symbol() {
+	@include sprites-bg-size;
+	@include sprites-bg-svg;
+	width: 596px;
+	height: 294px;
+	background-position: -1450px 0;
+	@at-root .no-svg & {
+		@include sprites-bg-png;
+	}
+}
+
+%sprites-veams-std-symbol {
+	@include sprites-veams-std-symbol();
+}
+
+

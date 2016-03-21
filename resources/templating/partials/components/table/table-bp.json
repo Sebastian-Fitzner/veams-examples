@@ -1,0 +1,140 @@
+{
+	"tableWithHead": {
+		"tableContextClass": "zebra",
+		"tableCaption": "Table Caption",
+		"tableHeader": {
+			"data": [
+				{
+					"thContent": "Table cell header 1"
+				},
+				{
+					"thContent": "Table cell header 2"
+				},
+				{
+					"thContent": "Table cell header 3"
+				},
+				{
+					"thContent": "Table cell header 4"
+				}
+			]
+		},
+		"tableRow": {
+			"data": [
+				{
+					"data": [
+						{
+							"tdContent": "Content 1"
+						},
+						{
+							"tdClass": "is-bold",
+							"tdContent": "Content 2"
+						},
+						{
+							"tdContent": "Content 3"
+						},
+						{
+							"tdContent": "Content 4"
+						}
+					]
+				},
+				{
+					"data": [
+						{
+							"tdContent": "Content 1"
+						},
+						{
+							"tdClass": "is-bold",
+							"tdContent": "Content 2"
+						},
+						{
+							"tdContent": "Content 3"
+						},
+						{
+							"tdContent": "Content 4"
+						}
+					]
+				}
+			]
+		}
+	},
+	"tableHeadLeft": {
+		"tableContextClass": "zebra",
+		"tableCaption": false,
+		"tableHeader": false,
+		"tableRow": {
+			"data": [
+				{
+					"data": [
+						{
+							"thTag": true,
+							"tdContent": "Table with"
+						},
+						{
+							"tdClass": "is-bold",
+							"tdContent": "Content 1"
+						},
+						{
+							"tdContent": "Content 2"
+						},
+						{
+							"tdContent": "Content 3"
+						}
+					]
+				},
+				{
+					"data": [
+						{
+							"thTag": true,
+							"tdContent": "left head"
+						},
+						{
+							"tdClass": "is-bold",
+							"tdContent": "Content 1"
+						},
+						{
+							"tdContent": "Content 2"
+						},
+						{
+							"tdContent": "Content 3"
+						}
+					]
+				}
+			]
+		}
+	},
+	"tableWithoutHead": {
+		"tableContextClass": "zebra",
+		"tableCaption": false,
+		"tableHeader": false,
+		"tableRow": {
+			"data": [
+				{
+					"data": [
+						{
+							"tdContent": "Content 1"
+						},
+						{
+							"tdContent": "Content 2"
+						},
+						{
+							"tdContent": "Content 3"
+						}
+					]
+				},
+				{
+					"data": [
+						{
+							"tdContent": "Content 1"
+						},
+						{
+							"tdContent": "Content 2"
+						},
+						{
+							"tdContent": "Content 3"
+						}
+					]
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,41 @@
+{
+	"simple": {
+		"figureId": "figure-content",
+		"figureContextClass": "simple",
+		"pictureAlt": "Simple Picture",
+		"pictureUrlStd": "http://placehold.it/800x400",
+		"picture320": "http://placehold.it/320x320",
+		"picture320_2x": "http://placehold.it/640x640",
+		"picture321": "http://placehold.it/800x400",
+		"picture321_2x": "http://placehold.it/1600x1000"
+	},
+	"caption": {
+		"figureId": "figure-caption",
+		"figureContextClass": "caption",
+		"figureCaption": {
+			"captionHeadline": "My custom picture with caption",
+			"captionContent": "and custom content"
+		},
+		"pictureAlt": "Simple Picture",
+		"pictureUrlStd": "http://placehold.it/800x400",
+		"picture320": "http://placehold.it/320x320",
+		"picture320_2x": "http://placehold.it/640x640",
+		"picture321": "http://placehold.it/800x400",
+		"picture321_2x": "http://placehold.it/1600x1000"
+	},
+	"video": {
+		"figureContextClass": "video",
+		"figureCaption": {
+			"captionHeadline": "My custom video with caption"
+		},
+		"figureVideo": {
+			"videoPoster": "",
+			"videoOptions": "controls",
+			"videoContextClass": "figure",
+			"videoClasses": false,
+			"videoMp4": "media/reverse.mp4",
+			"videoWebm": "media/reverse.webm",
+			"videoTrack": false
+		}
+	}
+}

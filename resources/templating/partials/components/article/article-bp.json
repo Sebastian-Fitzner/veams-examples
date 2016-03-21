@@ -1,0 +1,86 @@
+{
+	"simple": {
+		"articleContextClass": false,
+		"articleClasses": "is-bg-higlight-1",
+		"articleHeader": {
+			"articleHeaderClasses": "is-header",
+			"articleDate": "10.04.2015",
+			"articleH1": "Article Headline",
+			"articleH2": "Article Subline",
+			"articleIntro": "Article Intro"
+		},
+		"articleContentClasses": "is-visible",
+		"articleMd": {
+			"rteContextClass": "article",
+			"rteMd": "resources/data/markdown/text.md"
+		},
+		"articleFooter": {
+			"articleFooterClasses": "is-margin",
+			"articleFooterLink": "Read more"
+		}
+	},
+	"articleWithImage": {
+		"articleContextClass": "image",
+		"articleClasses": false,
+		"articleHeader": {
+			"articleHeaderClasses": "is-header",
+			"articleDate": "12.04.2015",
+			"articleH1": "A Second Article Headline",
+			"articleH2": "Article Subline",
+			"articleIntro": "Article Intro"
+		},
+		"articleFigureClasses": "is-right",
+		"articleFigure": {
+			"figureContextClass": "article",
+			"pictureUrlStd": "http://placehold.it/400x250",
+			"picture320": "http://placehold.it/320x200",
+			"picture320_2x": "http://placehold.it/640x400",
+			"picture321": "http://placehold.it/400x250",
+			"picture321_2x": "http://placehold.it/800x500",
+			"figureCaption": {
+				"captionHeadline": "This is my figure headline",
+				"captionContent": "And here is some custom text which describes the figure."
+			}
+		},
+		"articleContentClasses": "is-left",
+		"articleMd": {
+			"rteContextClass": "image",
+			"rteClasses": "is-full",
+			"rteMd": "resources/data/markdown/text.md"
+		},
+		"articleFooter": false
+	},
+	"multipleContent": {
+		"articleContextClass": "content",
+		"articleClasses": false,
+		"articleHeader": {
+			"articleHeaderClasses": "is-header",
+			"articleDate": false,
+			"articleH1": "Article Headline",
+			"articleH2": "Article Subline",
+			"articleIntro": "Article Intro"
+		},
+		"articleContentClasses": "is-visible",
+		"articleMd": {
+			"rteContextClass": "content",
+			"rtes": [
+				{
+					"rteMd": "resources/data/markdown/text.md"
+				},
+				{
+					"rteMd": "resources/data/markdown/h3.md"
+				},
+				{
+					"rteMd": "resources/data/markdown/table.md"
+				},
+				{
+					"rteMd": "resources/data/markdown/h3.md"
+				},
+				{
+					"rteMd": "resources/data/markdown/ul.md"
+				}
+			]
+		},
+		"articleFooter": false
+	}
+}

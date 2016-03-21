@@ -1,0 +1,37 @@
+{{! ---
+general: u-section
+============================================
+
+Requirements:
+- (only hbs)
+
+Options:
+- sectionClasses {String} - Modifier classes
+
+Important Notes:
+
+--- }}
+
+
+<section class="u-section{{#if options.sectionClasses}} {{options.sectionClasses}}{{/if}}">
+
+	<div class="section__header">
+		<h2 class="section__headline">
+			{{options.headline}}
+		</h2>
+	</div>
+
+	<div class="section__content">
+		{{{yield}}}
+	</div>
+
+	<div class="section__footer">
+		<h3 class="section__h3">
+			Installation
+		</h3>
+		<pre>
+			<code class="section__code bash">veams {{options.bash}}</code>
+		</pre>
+	</div>
+
+</section>

@@ -1,0 +1,21 @@
+{{! WrapWith START: Table Segment }}
+{{#wrapWith "u-segment" headline="Table with header"}}
+	{{#with table-bp.tableWithHead}}
+		{{> c-table}}
+	{{/with}}
+{{/wrapWith}}
+{{! WrapWith END: Table Segment }}
+{{! WrapWith START: Table Segment }}
+{{#wrapWith "u-segment" headline="Table with left header"}}
+	{{#with table-bp.tableHeadLeft}}
+		{{> c-table}}
+	{{/with}}
+{{/wrapWith}}
+{{! WrapWith END: Table Segment }}
+{{! WrapWith START: Table Segment }}
+{{#wrapWith "u-segment" headline="Table without header"}}
+	{{#with table-bp.tableWithoutHead}}
+		{{> c-table}}
+	{{/with}}
+{{/wrapWith}}
+{{! WrapWith END: Table Segment }}

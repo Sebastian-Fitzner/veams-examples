@@ -1,0 +1,11 @@
+{
+  "version": "0.1.0",
+  "dependencies": {
+    "bourbon": "~4.2.4",
+    "neat": "~1.7.2",
+    "veams-sass": "~2.0.2",
+    "veams-js": "^3.0.7",
+    "veams-component-slider": "^1.0.6"
+  },
+  "name": "veams examples"
+}

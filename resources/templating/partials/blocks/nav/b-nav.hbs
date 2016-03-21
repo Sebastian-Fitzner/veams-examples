@@ -1,0 +1,22 @@
+{{! ---
+block: b-nav
+============================================
+
+Requirements:
+- (only hbs)
+
+Options:
+- navClasses {String} - Modifier classes
+
+Important Notes:
+
+--- }}
+
+
+<div class="b-nav{{#if navClasses}} {{navClasses}}{{/if}}">
+	<ul class="nav__list">
+		<li class="nav__list-item"><a href="page-components.html" class="nav__link is-active">Components</a></li>
+		<li class="nav__list-item"><a href="page-utilities.html" class="nav__link">Utilities</a></li>
+		<li class="nav__list-item"><a href="page-blocks.html" class="nav__link">Blocks</a></li>
+	</ul>
+</div>

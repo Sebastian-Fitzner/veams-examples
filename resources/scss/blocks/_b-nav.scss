@@ -1,0 +1,35 @@
+/* ===================================================
+Block: nav
+=================================================== */
+
+.b-nav {
+	.nav__list {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.nav__list-item {
+		display: inline-block;
+	}
+
+	.nav__link {
+		padding: 2rem 3rem;
+		display: block;
+		font-size: 2.5rem;
+		color: color(highlight-dark);
+		font-family: $font-family;
+		font-weight: $font-light;
+		text-decoration: none;
+
+		&:hover {
+			color: color(highlight-main);
+		}
+
+		&.is-active {
+			background-color: color(highlight-light);
+			background-image: $bg-pattern;
+			color: color(highlight-main-dark);
+
+		}
+	}
+}

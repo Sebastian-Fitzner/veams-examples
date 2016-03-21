@@ -1,0 +1,38 @@
+{{! WrapWith START: Segment }}
+{{#wrapWith "u-segment" headline="Default slider"}}
+{{! wrapWith START: Slider }}
+	{{#with slider-bp.simple}}
+		{{#wrapWith "c-slider"}}
+			{{#times 4}}
+				{{#wrapWith "c-slider__item"}}
+
+					{{#with ../../../../picture-bp}}
+						{{> c-picture}}
+					{{/with}}
+
+				{{/wrapWith}}
+			{{/times}}
+
+		{{/wrapWith}}
+	{{/with}}
+{{! wrapWith END: Slider}}
+{{/wrapWith}}
+{{! WrapWith END: Segment }}
+
+{{! WrapWith START: Segment }}
+{{#wrapWith "u-segment" headline="Customized slider"}}
+{{! wrapWith START: Slider }}
+	{{#with slider-bp.custom}}
+		{{#wrapWith "c-slider" jsOptions=this.sliderOptions.jsOptions }}
+			{{#times 6}}
+				{{#wrapWith "c-slider__item"}}
+					{{#with ../../../../figure-bp.caption}}
+						{{> c-figure}}
+					{{/with}}
+				{{/wrapWith}}
+			{{/times}}
+		{{/wrapWith}}
+	{{/with}}
+{{! wrapWith END: Slider}}
+{{/wrapWith}}
+{{! WrapWith END: Segment }}
