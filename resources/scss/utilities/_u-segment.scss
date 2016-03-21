@@ -19,7 +19,9 @@ Global: segment
 	}
 
 	.segment__content {
-		display: flex;
-		justify-content: center;
+		&.is-centered {
+			display: flex;
+			justify-content: center;
+		}
 	}
 }

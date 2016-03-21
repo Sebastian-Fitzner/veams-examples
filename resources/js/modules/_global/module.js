@@ -33,7 +33,7 @@ class AppModule {
 	 * Save options by merging default options with passed options
 	 */
 	set _options(options) {
-		this.options = Helpers.deepExtend(this.options || {}, options);
+		this.options = Helpers.extend(this.options || {}, options);
 	}
 
 	// STANDARD METHODS
