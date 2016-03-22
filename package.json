@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "exoskeleton": "^0.7.0",
+    "handlebars": "^4.0.5",
     "jquery": "^2.2.2",
     "respimage": "^1.4.2",
     "touchswipe": "^1.6.0",
@@ -40,7 +41,7 @@
     "grunt-contrib-clean": "~0.6.0",
     "grunt-contrib-copy": "~0.8.1",
     "grunt-contrib-cssmin": "~0.14.0",
-    "grunt-contrib-handlebars": "~0.10.2",
+    "grunt-contrib-handlebars": "~1.0.0",
     "grunt-contrib-htmlmin": "^0.5.0",
     "grunt-contrib-uglify": "~0.9.2",
     "grunt-contrib-watch": "~0.6.1",

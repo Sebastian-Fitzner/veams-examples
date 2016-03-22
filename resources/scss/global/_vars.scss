@@ -4,6 +4,8 @@
 @lost flexbox flex;
 @lost gutter 30px;
 
+$grid-columns: 12;
+
 // Uncomment this in development to visualize the entire grid structure of your site
 body {
 	// lost-utility: edit;

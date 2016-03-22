@@ -35,6 +35,7 @@ config.options = {
 		endpoints: [
 			'resources/templating',
 			'resources/js/main.js',
+			'resources/js/utils/events.js',
 			'resources/scss/styles.scss'
 		]
 	},

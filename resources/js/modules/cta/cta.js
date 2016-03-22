@@ -132,7 +132,8 @@ class CTA extends AppModule {
 	clickHandler() {
 		App.Vent.trigger(this.options.globalEvent, {
 			el: this.$el,
-			options: this.options
+			options: this.options,
+			data: this.options.data
 		});
 	}
 }

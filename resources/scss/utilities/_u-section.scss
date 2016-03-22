@@ -3,17 +3,17 @@ Global: section
 =================================================== */
 
 .u-section {
-	margin-bottom: 8rem;
+	margin-bottom: 16rem;
 
 	.section__headline {
-		border-top: 1px solid lighten(color(highlight-dark), 60);
-		font-size: 2rem;
+		border-top: 2px solid lighten(color(highlight-dark), 65);
+		font-size: 2.5rem;
 		font-weight: $font-light;
 		line-height: 1.5;
 		margin: 2.75rem 0 4rem 0;
 		padding-top: 1rem;
 		text-transform: uppercase;
-		color: lighten(color(highlight-dark), 35);
+		color: lighten(color(highlight-dark), 45);
 		text-align: center;
 	}
 

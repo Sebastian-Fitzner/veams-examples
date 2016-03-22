@@ -3,12 +3,9 @@ import App from './app';
 import Helpers from './utils/helpers';
 
 // ES6 Modules
-
-
 import CTA from './modules/cta/cta';
-
-
 import Slider from './modules/slider/slider';
+import Overlay from './modules/overlay/overlay';
 
 // @INSERTPOINT :: @ref: js-import
 
@@ -46,6 +43,12 @@ class Core {
 			// Redirect to page
 			window.location.href = String(obj.url);
 		});
+
+
+		/**
+		 * Init overlay
+		 */
+		new Overlay();
 
 		// @INSERTPOINT :: @ref: js-init-once-v3
 

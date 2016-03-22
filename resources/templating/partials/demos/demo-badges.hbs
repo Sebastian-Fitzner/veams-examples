@@ -1,0 +1,9 @@
+{{! WrapWith START: Segment }}
+{{#wrapWith "u-segment" centered=true}}
+	{{#with badge-bp}}
+		{{#each data}}
+			{{> c-badge this}}
+		{{/each}}
+	{{/with}}
+{{/wrapWith}}
+{{! WrapWith END: Segment }}

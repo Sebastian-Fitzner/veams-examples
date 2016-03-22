@@ -6,6 +6,7 @@ CTA COMPONENT
 Global Styles
 --------------------------------------------------- */
 [data-css="c-cta"] {
+	@include reset-btn;
 	@include transition(background-color $transition-duration / 2 $transition-ease-method);
 
 	background-color: color(highlight-dark);
@@ -27,13 +28,6 @@ Global Styles
 	}
 	.cta__content {
 	}
-}
-
-/* ---------------------------------------------------
-Overlay
---------------------------------------------------- */
-.c-cta--overlay {
-	width: 100%;
 }
 
 /* ---------------------------------------------------

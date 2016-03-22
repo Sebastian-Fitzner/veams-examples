@@ -12,7 +12,7 @@
 		"articleContentClasses": "is-visible",
 		"articleMd": {
 			"rteContextClass": "article",
-			"rteMd": "resources/data/markdown/text.md"
+			"rteMd": "resources/templating/data/markdown/text.md"
 		},
 		"articleFooter": {
 			"articleFooterClasses": "is-margin",
@@ -25,9 +25,7 @@
 		"articleHeader": {
 			"articleHeaderClasses": "is-header",
 			"articleDate": "12.04.2015",
-			"articleH1": "A Second Article Headline",
-			"articleH2": "Article Subline",
-			"articleIntro": "Article Intro"
+			"articleH1": "An Article Headline"
 		},
 		"articleFigureClasses": "is-right",
 		"articleFigure": {
@@ -46,7 +44,7 @@
 		"articleMd": {
 			"rteContextClass": "image",
 			"rteClasses": "is-full",
-			"rteMd": "resources/data/markdown/text.md"
+			"rteMd": "resources/templating/data/markdown/text.md"
 		},
 		"articleFooter": false
 	},
@@ -65,19 +63,19 @@
 			"rteContextClass": "content",
 			"rtes": [
 				{
-					"rteMd": "resources/data/markdown/text.md"
+					"rteMd": "resources/templating/data/markdown/text.md"
 				},
 				{
-					"rteMd": "resources/data/markdown/h3.md"
+					"rteMd": "resources/templating/data/markdown/h3.md"
 				},
 				{
-					"rteMd": "resources/data/markdown/table.md"
+					"rteMd": "resources/templating/data/markdown/table.md"
 				},
 				{
-					"rteMd": "resources/data/markdown/h3.md"
+					"rteMd": "resources/templating/data/markdown/h3.md"
 				},
 				{
-					"rteMd": "resources/data/markdown/ul.md"
+					"rteMd": "resources/templating/data/markdown/ul.md"
 				}
 			]
 		},

@@ -14,9 +14,18 @@ Important Notes:
 
 
 <div class="b-nav{{#if navClasses}} {{navClasses}}{{/if}}">
-	<ul class="nav__list">
-		<li class="nav__list-item"><a href="page-components.html" class="nav__link is-active">Components</a></li>
-		<li class="nav__list-item"><a href="page-utilities.html" class="nav__link">Utilities</a></li>
-		<li class="nav__list-item"><a href="page-blocks.html" class="nav__link">Blocks</a></li>
-	</ul>
+	{{#each sitemap}}
+		<ul class="nav__list">
+			{{#withSort ../pages "data.sortOrder"}}
+				{{#is data.sitemap ../sitemap}}
+					<li class="nav__list-item">
+						{{log ../../../page}}
+						<a href="{{autolink}}" class="nav__link{{#is ../../../page.dest ../this.dest}} is-active{{/is}}">
+							{{data.menuLink}}
+						</a>
+					</li>
+				{{/is}}
+			{{/withSort}}
+		</ul>
+	{{/each}}
 </div>

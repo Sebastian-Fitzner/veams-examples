@@ -3,3 +3,21 @@
 		@include article-headline;
 	}
 }
+
+.c-article--image {
+	max-width: 70%;
+	margin: 0 auto;
+
+	.article__container {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
+	.article__content {
+		width: 50%;
+		padding-right: 5%;
+	}
+	.article__figure {
+		width: 50%;
+	}
+}

@@ -5,22 +5,22 @@
 		"ctaContextClass": "link",
 		"ctaClass": "class",
 		"ctaIcon": true,
-		"ctaContent": "content"
+		"ctaContent": "Call-to-action"
 	},
-	"withJs": {
-		"ctaButton": true,
-		"ctaTarget": "#",
-		"ctaContextClass": "default",
-		"ctaClass": "class",
-		"ctaIcon": true,
-		"ctaContent": "content",
-		"ctaJsAtom": false,
+	"advanced": {
+		"ctaButton": false,
+		"ctaContextClass": "overlay",
+		"ctaIcon": false,
+		"ctaContent": "Trigger overlay",
 		"ctaJsModule": true,
 		"jsOptions": [
 			{
-				"jsObject": false,
-				"jsKey": "",
-				"jsValue": ""
+				"jsKey": "globalEvent",
+				"jsValue": "overlay:open"
+			},
+			{
+				"jsKey": "data",
+				"jsValue": "<img src=\\\"http://placehold.it/600x350\\\" />"
 			}
 		]
 	}

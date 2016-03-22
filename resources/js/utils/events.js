@@ -9,19 +9,18 @@ const EVENTS = {
 	btnOpen: 'button:open',
 	DOMchanged: 'DOMchanged',
 	DOMredirect: 'dom:redirect',
-	equalRender: 'equal:render',
-	formComplete: 'form:complete',
-	formReset: 'form:reset',
 	mediachange: 'mediachange',
-	paginationClose: 'pagination:closed',
-	paginationRendered: 'pagination:rendered',
 	resize: 'resize',
-	scroll: 'scroll',
-	selectChanged: 'select:changed',
-	selectRendered: 'select:rendered',
-	toggleContent: 'toggle:toggleContent',
-	uiOverlayPopulate: 'overlay:populate',
-	uiOverlayClose: 'uiOverlay:populate'
+	scroll: 'scroll'
 };
+
+/**
+ * Events Overlay
+ */
+EVENTS.overlay = {
+	open: 'overlay:open'
+};
+
+// @INSERTPOINT :: @ref: js-events
 
 export default EVENTS;

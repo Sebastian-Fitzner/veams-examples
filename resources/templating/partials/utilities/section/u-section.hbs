@@ -13,7 +13,7 @@ Important Notes:
 --- }}
 
 
-<section class="u-section{{#if options.sectionClasses}} {{options.sectionClasses}}{{/if}}">
+<section class="u-section{{#if options.sectionClasses}} {{options.sectionClasses}}{{/if}}" id="{{dashify (lowercase options.headline)}}">
 
 	<div class="section__header">
 		<h2 class="section__headline">
@@ -25,13 +25,14 @@ Important Notes:
 		{{{yield}}}
 	</div>
 
-	<div class="section__footer">
-		<h3 class="section__h3">
-			Installation
-		</h3>
+	{{#if options.bash}}
+		<div class="section__footer">
+			<h3 class="section__h3">
+				Installation
+			</h3>
 		<pre>
 			<code class="section__code bash">veams {{options.bash}}</code>
 		</pre>
-	</div>
-
+		</div>
+	{{/if}}
 </section>

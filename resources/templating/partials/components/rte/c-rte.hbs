@@ -17,12 +17,12 @@ This component should be used most of the time for content editor sections
 --- }}
 <div class="c-rte{{#if rteContextClass}}--{{rteContextClass}}{{else}}--default{{/if}}{{#if rteClasses}} {{rteClasses}}{{/if}}" data-css="c-rte">
 	{{#if rteMd}}
-		{{md rteMd}}
+		{{{md rteMd}}}
 	{{/if}}
 
 	{{#if rtes}}
 		{{#each rtes}}
-			{{md rteMd}}
+			{{{md rteMd}}}
 		{{/each}}
 	{{/if}}
 </div>

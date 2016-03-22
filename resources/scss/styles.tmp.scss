@@ -39,7 +39,6 @@ Main File For Imports
 @import "global/get-media";
 @import "global/modifiers";
 
-
 // Regions in Layouts
 @import "docs/_highlight";
 @import "docs/_monokai";
@@ -52,11 +51,14 @@ Main File For Imports
 @import "layouts/_stage";
 
 // Components
+@import "components/_b-overlay";
 @import "components/_c-article";
 @import "components/_c-badge";
 @import "components/_c-cta";
 @import "components/_c-figure";
+@import "components/_c-pagination";
 @import "components/_c-picture";
+@import "components/_c-quote";
 @import "components/_c-rte";
 @import "components/_c-slider";
 @import "components/_c-table";

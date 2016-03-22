@@ -46,20 +46,22 @@ Important Notes:
 		</header>
 	{{/if}}
 
-	{{#if articleFigure }}
-		<div class="article__figure{{#if articleFigureClasses}} {{articleFigureClasses}}{{/if}}">
-			{{> c-figure articleFigure}}
-		</div>
-	{{/if}}
-
-	<div class="article__content{{#if articleContentClasses}} {{articleContentClasses}}{{/if}}">
-		{{#if articleSummary}}
-			{{{truncate articleSummary articleLength "..." }}}
-		{{else}}
-			{{#with articleMd}}
-				{{> c-rte}}
-			{{/with}}
+	<div class="article__container">
+		{{#if articleFigure }}
+			<div class="article__figure{{#if articleFigureClasses}} {{articleFigureClasses}}{{/if}}">
+				{{> c-figure articleFigure}}
+			</div>
 		{{/if}}
+
+		<div class="article__content{{#if articleContentClasses}} {{articleContentClasses}}{{/if}}">
+			{{#if articleSummary}}
+				{{{truncate articleSummary articleLength "..." }}}
+			{{else}}
+				{{#with articleMd}}
+					{{> c-rte}}
+				{{/with}}
+			{{/if}}
+		</div>
 	</div>
 
 	{{#if articleFooter}}

@@ -1,0 +1,12 @@
+{
+	"simple": {
+		"pagContext": false,
+		"pagClasses": false,
+		"pagButtons": {
+			"description": "One Page",
+			"previous": "Back",
+			"next": "Forward"
+		},
+		"pagMax": 12
+	}
+}

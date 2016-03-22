@@ -1,24 +1,54 @@
 ---
 title: Veams - A System to Build Scalable Web Apps and HTML5 Web Interfaces.
 lead: Components and utilities built with Veams.
-menuLink: Home
+menuLink: Components
 sortOrder: 01
+sitemap: navigation
 ---
 
 {{#extend "lyt-default"}}
 	{{#content "main"}}
 
+
 	{{! WrapWith START: Section }}
+		{{#wrapWith "u-section" headline="Article" bash="install vc article"}}
+			{{> demo-article }}
+		{{/wrapWith}}
+		{{! WrapWith END: Section }}
+
+		{{! WrapWith START: Section }}
 		{{#wrapWith "u-section" headline="Badges" bash="install vc badge"}}
-		{{! WrapWith START: Segment }}
-			{{#wrapWith "u-segment" centered=true}}
-				{{#with badge-bp}}
-					{{#each data}}
-						{{> c-badge this}}
-					{{/each}}
-				{{/with}}
-			{{/wrapWith}}
-		{{! WrapWith END: Segment }}
+			{{> demo-badges }}
+		{{/wrapWith}}
+		{{! WrapWith END: Section }}
+
+		{{! WrapWith START: Section }}
+		{{#wrapWith "u-section" headline="Call-To-Action" bash="install vc cta"}}
+			{{> demo-cta }}
+		{{/wrapWith}}
+		{{! WrapWith END: Section }}
+
+		{{! WrapWith START: Section }}
+		{{#wrapWith "u-section" headline="Figure" bash="install vc figure"}}
+			{{> demo-figure }}
+		{{/wrapWith}}
+		{{! WrapWith END: Section }}
+
+		{{! WrapWith START: Section }}
+		{{#wrapWith "u-section" headline="Pagination" bash="install vc pagination"}}
+			{{> demo-pagination }}
+		{{/wrapWith}}
+		{{! WrapWith END: Section }}
+
+		{{! WrapWith START: Section }}
+		{{#wrapWith "u-section" headline="Picture" bash="install vc picture"}}
+			{{> demo-picture }}
+		{{/wrapWith}}
+		{{! WrapWith END: Section }}
+
+		{{! WrapWith START: Section }}
+		{{#wrapWith "u-section" headline="Quote" bash="install vc quote"}}
+			{{> demo-quote }}
 		{{/wrapWith}}
 		{{! WrapWith END: Section }}
 
@@ -34,15 +64,15 @@ sortOrder: 01
 		{{/wrapWith}}
 		{{! WrapWith END:  }}
 
+		{{! WrapWith START:  }}
+		{{#wrapWith "u-section" headline="Video" bash="install vc video"}}
+			{{> demo-video }}
+		{{/wrapWith}}
+		{{! WrapWith END:  }}
+
 		{{! WrapWith START: Section }}
-		{{#wrapWith "u-section" headline="Responsive Youtube video" bash="install vc youtube-video"}}
-		{{! WrapWith START: youtube-video }}
-			{{#wrapWith "u-segment"}}
-				{{#with yt-video-bp}}
-					{{> c-yt-video}}
-				{{/with}}
-			{{/wrapWith}}
-		{{! WrapWith END: youtube-video }}
+		{{#wrapWith "u-section" headline="Responsive embed video" bash="install vc youtube-video"}}
+			{{> demo-yt-video }}
 		{{/wrapWith}}
 	{{! WrapWith END: Section }}
 

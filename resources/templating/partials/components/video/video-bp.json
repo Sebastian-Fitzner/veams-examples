@@ -3,8 +3,7 @@
 	"videoClasses": false,
 	"videoPoster": "",
 	"videoOptions": "controls buffer",
-	"videoMp4": "media/reverse.mp4",
-	"videoWebm": "media/reverse.webm",
+	"videoMp4": "media/sample.mp4",
 	"videoTrack": {
 		"trackSubtitle": false,
 		"trackLang": false,

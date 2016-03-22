@@ -9,98 +9,112 @@ sortOrder: 02
 		<h3>Place your components here!</h3>
 
 
-{{#with cta-bp.simple}}
-	{{> c-cta}}
+		{{#with cta-bp.simple}}
+			{{> c-cta}}
+		{{/with}}
+
+
+		{{#with rte-bp.single}}
+			{{> c-rte}}
+		{{/with}}
+
+		{{#with rte-bp.full}}
+			{{> c-rte}}
+		{{/with}}
+
+
+		{{#with picture-bp}}
+			{{> c-picture}}
+		{{/with}}
+
+
+		{{#with figure-bp.simple}}
+			{{> c-figure}}
+		{{/with}}
+
+		{{#with figure-bp.caption}}
+			{{> c-figure}}
+		{{/with}}
+
+		{{#with figure-bp.video}}
+			{{> c-figure}}
+		{{/with}}
+
+
+		{{#with video-bp}}
+			{{> c-video}}
+		{{/with}}
+
+
+		{{#with article-bp.simple}}
+			{{> c-article}}
+		{{/with}}
+
+		{{#with article-bp.articleWithImage}}
+			{{> c-article}}
+		{{/with}}
+
+		{{#with article-bp.multipleContent}}
+			{{> c-article}}
+		{{/with}}
+
+
+
+		{{! wrapWith START: Slider }}
+		{{#with slider-bp.simple}}
+			{{#wrapWith "c-slider"}}
+				{{#wrapWith "c-slider__item"}}
+					<img src="https://placeholdit.imgix.net/~text?txtsize=92&txt=980%C3%97600&w=980&h=600" alt="test">
+				{{/wrapWith}}
+				{{#wrapWith "c-slider__item"}}
+					<img src="https://placeholdit.imgix.net/~text?txtsize=92&txt=980%C3%97600&w=980&h=600" alt="test">
+				{{/wrapWith}}
+				{{#wrapWith "c-slider__item"}}
+					<img src="https://placeholdit.imgix.net/~text?txtsize=92&txt=980%C3%97600&w=980&h=600" alt="test">
+				{{/wrapWith}}
+			{{/wrapWith}}
+		{{/with}}
+		{{! wrapWith END: Slider}}
+
+
+		{{#with badge-bp}}
+			{{#each data}}
+				{{> c-badge this}}
+			{{/each}}
+		{{/with}}
+
+
+		{{#with table-bp.tableWithHead}}
+			{{> c-table}}
+		{{/with}}
+
+		{{#with table-bp.tableHeadLeft}}
+			{{> c-table}}
+		{{/with}}
+
+		{{#with table-bp.tableWithoutHead}}
+			{{> c-table}}
+		{{/with}}
+
+
+		{{#with yt-video-bp}}
+			{{> c-yt-video}}
+		{{/with}}
+
+
+{{#with pagination-bp.simple}}
+	{{> c-pagination}}
 {{/with}}
 
 
-{{#with rte-bp.single}}
-	{{> c-rte}}
+{{#with quote-bp.simple}}
+	{{> c-quote }}
 {{/with}}
 
-{{#with rte-bp.full}}
-		{{> c-rte}}
+{{#with quote-bp.full}}
+	{{> c-quote }}
 {{/with}}
 
-
-{{#with picture-bp}}
-	{{> c-picture}}
-{{/with}}
-
-
-{{#with figure-bp.simple}}
-	{{> c-figure}}
-{{/with}}
-
-{{#with figure-bp.caption}}
-	{{> c-figure}}
-{{/with}}
-
-{{#with figure-bp.video}}
-	{{> c-figure}}
-{{/with}}
-
-
-{{#with video-bp}}
-	{{> c-video}}
-{{/with}}
-
-
-	{{#with article-bp.simple}}
-		{{> c-article}}
-	{{/with}}
-
-	{{#with article-bp.articleWithImage}}
-		{{> c-article}}
-	{{/with}}
-
-	{{#with article-bp.multipleContent}}
-		{{> c-article}}
-	{{/with}}
-	
-
-
-{{! wrapWith START: Slider }}
-{{#with slider-bp.simple}}
-	{{#wrapWith "c-slider"}}
-		{{#wrapWith "c-slider__item"}}
-			<img src="https://placeholdit.imgix.net/~text?txtsize=92&txt=980%C3%97600&w=980&h=600" alt="test">
-		{{/wrapWith}}
-		{{#wrapWith "c-slider__item"}}
-			<img src="https://placeholdit.imgix.net/~text?txtsize=92&txt=980%C3%97600&w=980&h=600" alt="test">
-		{{/wrapWith}}
-		{{#wrapWith "c-slider__item"}}
-			<img src="https://placeholdit.imgix.net/~text?txtsize=92&txt=980%C3%97600&w=980&h=600" alt="test">
-		{{/wrapWith}}
-	{{/wrapWith}}
-{{/with}}
-{{! wrapWith END: Slider}}
-
-
-{{#with badge-bp}}
-	{{#each data}}
-		{{> c-badge this}}
-	{{/each}}
-{{/with}}
-
-
-{{#with table-bp.tableWithHead}}
-	{{> c-table}}
-{{/with}}
-
-{{#with table-bp.tableHeadLeft}}
-	{{> c-table}}
-{{/with}}
-
-{{#with table-bp.tableWithoutHead}}
-	{{> c-table}}
-{{/with}}
-
-
-{{#with yt-video-bp}}
-	{{> c-yt-video}}
-{{/with}}
-
-		{{! @INSERTPOINT :: @ref: component-partial }}
+	{{! @INSERTPOINT :: @ref: component-partial }}
 	{{/content}}
 {{/extend}}
