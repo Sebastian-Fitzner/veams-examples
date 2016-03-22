@@ -59,3 +59,15 @@ Demo purpose styles
 		font-size: 2.2rem;
 	}
 }
+
+/*
+
+----------------------- */
+.sticky-content {
+	transition: top 600ms ease;
+	text-align: center;
+	display: block;
+	width: 100%;
+	background: #000;
+	color: color(white);
+}

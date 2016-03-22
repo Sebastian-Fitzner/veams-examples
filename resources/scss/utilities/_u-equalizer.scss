@@ -1,0 +1,104 @@
+.u-equalizer {
+	/*
+	Local vars
+	----------------------- */
+	$cl-child: equalizer__child;
+	$grid-padding: 12px;
+
+	@mixin equalizer--desktop() {
+		display: block;
+		width: 100%;
+		margin-bottom: 20px;
+		overflow: hidden;
+	}
+
+	/*
+	Styles
+	----------------------- */
+	@include equalizer--desktop;
+
+	/*
+	Modifiers
+	----------------------- */
+	&.is-grid-2 {
+		.#{$cl-child} {
+			width: 50%;
+			padding-right: $grid-padding;
+
+			@include bp(600px) {
+				width: 100%;
+				padding: 0;
+				margin-top: 20px;
+			}
+
+			&:nth-child(2n) {
+				padding-left: $grid-padding;
+				padding-right: 0;
+
+				@include bp(600px) {
+					width: 100%;
+					padding: 0;
+					margin-top: 20px;
+				}
+			}
+		}
+	}
+
+	&.is-grid-3 {
+		.#{$cl-child} {
+			width: 33.33334%;
+
+			@include bp(768px) {
+				width: 50%;
+			}
+
+			&:nth-child(1n) {
+				padding-right: $grid-padding + $grid-padding/2;
+
+				@include bp(768px) {
+					padding-right: $grid-padding;
+				}
+
+				@include bp(600px) {
+					width: 100%;
+					padding: 0;
+					margin-top: 20px;
+				}
+			}
+
+			&:nth-child(2n) {
+				padding-left: $grid-padding/2;
+				padding-right: $grid-padding/2;
+
+				@include bp(768px) {
+					padding-left: $grid-padding;
+					padding-right: 0;
+				}
+
+				@include bp(600px) {
+					width: 100%;
+					padding: 0;
+					margin-top: 20px;
+				}
+			}
+
+			&:nth-child(3n) {
+				padding-left: $grid-padding + $grid-padding/2;
+				padding-right: 0;
+
+				@include bp(768px) {
+					width: 100%;
+					padding: 0;
+					margin-top: 20px;
+				}
+			}
+		}
+	}
+
+	.#{$cl-child} {
+		display: block;
+		width: 100%;
+		float: left;
+	}
+
+}

@@ -6,6 +6,8 @@ import Helpers from './utils/helpers';
 import CTA from './modules/cta/cta';
 import Slider from './modules/slider/slider';
 import Overlay from './modules/overlay/overlay';
+import Equalizer from './modules/equalizer/equalizer';
+import Sticky from './modules/sticky/sticky';
 
 // @INSERTPOINT :: @ref: js-import
 
@@ -61,7 +63,7 @@ class Core {
 	render(context) {
 
 		// I am lazy ...
-		$('pre code', context).each(function (i, block) {
+		$('pre code', context).each(function(i, block) {
 			let height = $(this).outerHeight(),
 				heightMax = 230;
 
@@ -72,7 +74,7 @@ class Core {
 			}
 		});
 
-		$('[data-js-atom="toggle-code"]', context).on('click', function () {
+		$('[data-js-atom="toggle-code"]', context).on('click', function() {
 			let el = $(this).prev('code'),
 				elData = el.data('max-height');
 
@@ -104,12 +106,35 @@ class Core {
 			context: context
 		});
 
+		/**
+		 * Init Sticky
+		 */
+		Helpers.loadModule({
+			domName: 'sticky',
+			module: Sticky,
+			context: context
+		});
+
+		Helpers.loadModule({
+			domName: 'equalizer',
+			module: Equalizer,
+			render: false,
+			cb: function(module, options) {
+				if (options && options.delayInit) {
+					$(window).load(function() {
+						module._reinit(module);
+					});
+				}
+			},
+			context: context
+		});
+
 		// @INSERTPOINT :: @ref: js-init-v3
 
 	}
 }
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function() {
 	let core = new Core();
 
 	/**

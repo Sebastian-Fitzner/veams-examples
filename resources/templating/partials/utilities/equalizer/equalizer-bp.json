@@ -1,0 +1,37 @@
+{
+	"simple": {
+		"options": {
+			"classes": false,
+			"columns": false
+		}
+	},
+	"documentation": {
+		"name": "Equalizer",
+		"type": "utility",
+		"descriptionFile": "equalizer/README.md",
+		"imagePresets": false,
+		"jira": false,
+		"templates": [
+			{
+				"cat": "Handlebars",
+				"files": [
+					"u-equalizer.hbs",
+					"u-equalizer__child.hbs"
+				]
+			},
+			{
+				"cat": "Sass",
+				"files": [
+					"_u-equalizer.scss"
+				]
+			},
+			{
+				"cat": "JavaScript",
+				"files": [
+					"equalizer.js"
+				]
+			}
+		],
+		"requirements": false
+	}
+}

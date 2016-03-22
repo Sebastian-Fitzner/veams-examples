@@ -1,0 +1,30 @@
+/* ===================================================
+STICKY MODULE
+=================================================== */
+
+/* ---------------------------------------------------
+Global Styles
+--------------------------------------------------- */
+
+.is-sticky, .is-fixed {
+	transform: translate(-50%, 0px);
+	backface-visibility: hidden;
+	transition: top 300ms ease;
+
+	border-top: 0;
+	float: none;
+	left: 50%;
+	perspective: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+}
+
+/* ---------------------------------------------------
+Clone Element
+- to keep the initial height of the page
+--------------------------------------------------- */
+.is-clone {
+	display: block;
+}

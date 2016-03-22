@@ -1,0 +1,19 @@
+{{! ---
+utility: equalizer
+============================================
+
+Requirements:
+- 
+
+Options:
+- classes {String} - Just pass a string for modifier classes
+- columns {Number} - Just pass a number of columns
+
+Important Notes:
+This utility partial can be used as wrapWith helper.
+ 
+--- }}
+
+<div class="u-equalizer{{#if options.classes}} {{options.classes}}{{/if}}{{#if options.columns}} is-grid-{{options.columns}}{{/if}}" data-js-module="equalizer">
+	{{{yield}}}
+</div>

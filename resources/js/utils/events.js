@@ -21,6 +21,14 @@ EVENTS.overlay = {
 	open: 'overlay:open'
 };
 
+
+/**
+ * Events Equalizer
+ */
+EVENTS.equalizer = {
+	render: 'equalizer:render'
+};
+
 // @INSERTPOINT :: @ref: js-events
 
 export default EVENTS;

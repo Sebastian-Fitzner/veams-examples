@@ -1,5 +1,6 @@
 ---
-title: Build Better Prototypes with Veams
+title: Veams - A System to Build Scalable Web Apps and HTML5 Web Interfaces.
+lead: Components and utilities built with Veams.
 menuLink: Utilities
 sortOrder: 02
 sitemap: navigation
@@ -10,270 +11,24 @@ sitemap: navigation
 
 	{{! WrapWith START: Section }}
 		{{#wrapWith "u-section" headline="Grid" bash="install vu grid"}}
+			{{> demo-grid }}
+		{{/wrapWith}}
+		{{! WrapWith END: Section }}
 
-		{{! WrapWith START: Segment }}
-			{{#wrapWith "u-segment" headline="Grid Boxes"}}
-			{{! WrapWith START: Grid }}
-							{{#wrapWith "u-grid-row"}}
-							{{! WrapWith START: Columns }}
-								{{#wrapWith "u-grid-col" columns=12 box=true}}
-									{{#parseJSON '{"index": "12"}'}}
-										{{> demo-box}}
-									{{/parseJSON}}
-								{{/wrapWith}}
-								{{#wrapWith "u-grid-col" columns=1 box=true}}
-									{{#parseJSON '{"index": "1"}'}}
-										{{> demo-box}}
-									{{/parseJSON}}
-								{{/wrapWith}}
-								{{#wrapWith "u-grid-col" columns=11 box=true}}
-									{{#parseJSON '{"index": "11"}'}}
-										{{> demo-box}}
-									{{/parseJSON}}
-								{{/wrapWith}}
-								{{#wrapWith "u-grid-col" columns=2 box=true}}
-									{{#parseJSON '{"index": "2"}'}}
-										{{> demo-box}}
-									{{/parseJSON}}
-								{{/wrapWith}}
-								{{#wrapWith "u-grid-col" columns=10 box=true}}
-									{{#parseJSON '{"index": "10"}'}}
-										{{> demo-box}}
-									{{/parseJSON}}
-								{{/wrapWith}}
-								{{#wrapWith "u-grid-col" columns=3 box=true}}
-									{{#parseJSON '{"index": "3"}'}}
-										{{> demo-box}}
-									{{/parseJSON}}
-								{{/wrapWith}}
-								{{#wrapWith "u-grid-col" columns=9 box=true}}
-									{{#parseJSON '{"index": "9"}'}}
-										{{> demo-box}}
-									{{/parseJSON}}
-								{{/wrapWith}}
-								{{#wrapWith "u-grid-col" columns=4 box=true}}
-									{{#parseJSON '{"index": "4"}'}}
-										{{> demo-box}}
-									{{/parseJSON}}
-								{{/wrapWith}}
-								{{#wrapWith "u-grid-col" columns=8 box=true}}
-									{{#parseJSON '{"index": "8"}'}}
-										{{> demo-box}}
-									{{/parseJSON}}
-								{{/wrapWith}}
-								{{#wrapWith "u-grid-col" columns=5 box=true}}
-									{{#parseJSON '{"index": "5"}'}}
-										{{> demo-box}}
-									{{/parseJSON}}
-								{{/wrapWith}}
-								{{#wrapWith "u-grid-col" columns=7 box=true}}
-									{{#parseJSON '{"index": "7"}'}}
-										{{> demo-box}}
-									{{/parseJSON}}
-								{{/wrapWith}}
-								{{#wrapWith "u-grid-col" columns=6 box=true}}
-									{{#parseJSON '{"index": "6"}'}}
-										{{> demo-box}}
-									{{/parseJSON}}
-								{{/wrapWith}}
-								{{#wrapWith "u-grid-col" columns=6 box=true}}
-									{{#parseJSON '{"index": "6"}'}}
-										{{> demo-box}}
-									{{/parseJSON}}
-								{{/wrapWith}}
-								{{#wrapWith "u-grid-col" columns=7 box=true}}
-									{{#parseJSON '{"index": "7"}'}}
-										{{> demo-box}}
-									{{/parseJSON}}
-								{{/wrapWith}}
-								{{#wrapWith "u-grid-col" columns=5 box=true}}
-									{{#parseJSON '{"index": "5"}'}}
-										{{> demo-box}}
-									{{/parseJSON}}
-								{{/wrapWith}}
-								{{#wrapWith "u-grid-col" columns=8 box=true}}
-									{{#parseJSON '{"index": "8"}'}}
-										{{> demo-box}}
-									{{/parseJSON}}
-								{{/wrapWith}}
-								{{#wrapWith "u-grid-col" columns=4 box=true}}
-									{{#parseJSON '{"index": "4"}'}}
-										{{> demo-box}}
-									{{/parseJSON}}
-								{{/wrapWith}}
-								{{#wrapWith "u-grid-col" columns=9 box=true}}
-									{{#parseJSON '{"index": "9"}'}}
-										{{> demo-box}}
-									{{/parseJSON}}
-								{{/wrapWith}}
-								{{#wrapWith "u-grid-col" columns=3 box=true}}
-									{{#parseJSON '{"index": "3"}'}}
-										{{> demo-box}}
-									{{/parseJSON}}
-								{{/wrapWith}}
-								{{#wrapWith "u-grid-col" columns=10 box=true}}
-									{{#parseJSON '{"index": "10"}'}}
-										{{> demo-box}}
-									{{/parseJSON}}
-								{{/wrapWith}}
-								{{#wrapWith "u-grid-col" columns=2 box=true}}
-									{{#parseJSON '{"index": "2"}'}}
-										{{> demo-box}}
-									{{/parseJSON}}
-								{{/wrapWith}}
-								{{#wrapWith "u-grid-col" columns=11 box=true}}
-									{{#parseJSON '{"index": "11"}'}}
-										{{> demo-box}}
-									{{/parseJSON}}
-								{{/wrapWith}}
-								{{#wrapWith "u-grid-col" columns=1 box=true}}
-									{{#parseJSON '{"index": "1"}'}}
-										{{> demo-box}}
-									{{/parseJSON}}
-								{{/wrapWith}}
-								{{#wrapWith "u-grid-col" columns=12 box=true}}
-									{{#parseJSON '{"index": "12"}'}}
-										{{> demo-box}}
-									{{/parseJSON}}
-								{{/wrapWith}}
-							{{! WrapWith END: Columns }}
-							{{/wrapWith}}
-						{{! WrapWith END: Grid }}
-			{{/wrapWith}}
-			{{! WrapWith END: Segment }}
-			{{! WrapWith START: Segment }}
-			{{#wrapWith "u-segment" headline="Grid Columns"}}
-			{{! WrapWith START: Grid }}
-				{{#wrapWith "u-grid-row"}}
-				{{! WrapWith START: Columns }}
-					{{#wrapWith "u-grid-col" columns=12 box=false}}
-						{{#parseJSON '{"index": "12"}'}}
-							{{> demo-box}}
-						{{/parseJSON}}
-					{{/wrapWith}}
-					{{#wrapWith "u-grid-col" columns=1 box=false}}
-						{{#parseJSON '{"index": "1"}'}}
-							{{> demo-box}}
-						{{/parseJSON}}
-					{{/wrapWith}}
-					{{#wrapWith "u-grid-col" columns=11 box=false noMargin=true}}
-						{{#parseJSON '{"index": "11"}'}}
-							{{> demo-box}}
-						{{/parseJSON}}
-					{{/wrapWith}}
-					{{#wrapWith "u-grid-col" columns=2 box=false}}
-						{{#parseJSON '{"index": "2"}'}}
-							{{> demo-box}}
-						{{/parseJSON}}
-					{{/wrapWith}}
-					{{#wrapWith "u-grid-col" columns=10 box=false noMargin=true}}
-						{{#parseJSON '{"index": "10"}'}}
-							{{> demo-box}}
-						{{/parseJSON}}
-					{{/wrapWith}}
-					{{#wrapWith "u-grid-col" columns=3 box=false}}
-						{{#parseJSON '{"index": "3"}'}}
-							{{> demo-box}}
-						{{/parseJSON}}
-					{{/wrapWith}}
-					{{#wrapWith "u-grid-col" columns=9 box=false noMargin=true}}
-						{{#parseJSON '{"index": "9"}'}}
-							{{> demo-box}}
-						{{/parseJSON}}
-					{{/wrapWith}}
-					{{#wrapWith "u-grid-col" columns=4 box=false}}
-						{{#parseJSON '{"index": "4"}'}}
-							{{> demo-box}}
-						{{/parseJSON}}
-					{{/wrapWith}}
-					{{#wrapWith "u-grid-col" columns=8 box=false noMargin=true}}
-						{{#parseJSON '{"index": "8"}'}}
-							{{> demo-box}}
-						{{/parseJSON}}
-					{{/wrapWith}}
-					{{#wrapWith "u-grid-col" columns=5 box=false}}
-						{{#parseJSON '{"index": "5"}'}}
-							{{> demo-box}}
-						{{/parseJSON}}
-					{{/wrapWith}}
-					{{#wrapWith "u-grid-col" columns=7 box=false noMargin=true}}
-						{{#parseJSON '{"index": "7"}'}}
-							{{> demo-box}}
-						{{/parseJSON}}
-					{{/wrapWith}}
-					{{#wrapWith "u-grid-col" columns=6 box=false}}
-						{{#parseJSON '{"index": "6"}'}}
-							{{> demo-box}}
-						{{/parseJSON}}
-					{{/wrapWith}}
-					{{#wrapWith "u-grid-col" columns=6 box=false noMargin=true}}
-						{{#parseJSON '{"index": "6"}'}}
-							{{> demo-box}}
-						{{/parseJSON}}
-					{{/wrapWith}}
-					{{#wrapWith "u-grid-col" columns=7 box=false}}
-						{{#parseJSON '{"index": "7"}'}}
-							{{> demo-box}}
-						{{/parseJSON}}
-					{{/wrapWith}}
-					{{#wrapWith "u-grid-col" columns=5 box=false noMargin=true}}
-						{{#parseJSON '{"index": "5"}'}}
-							{{> demo-box}}
-						{{/parseJSON}}
-					{{/wrapWith}}
-					{{#wrapWith "u-grid-col" columns=8 box=false}}
-						{{#parseJSON '{"index": "8"}'}}
-							{{> demo-box}}
-						{{/parseJSON}}
-					{{/wrapWith}}
-					{{#wrapWith "u-grid-col" columns=4 box=false noMargin=true}}
-						{{#parseJSON '{"index": "4"}'}}
-							{{> demo-box}}
-						{{/parseJSON}}
-					{{/wrapWith}}
-					{{#wrapWith "u-grid-col" columns=9 box=false}}
-						{{#parseJSON '{"index": "9"}'}}
-							{{> demo-box}}
-						{{/parseJSON}}
-					{{/wrapWith}}
-					{{#wrapWith "u-grid-col" columns=3 box=false noMargin=true}}
-						{{#parseJSON '{"index": "3"}'}}
-							{{> demo-box}}
-						{{/parseJSON}}
-					{{/wrapWith}}
-					{{#wrapWith "u-grid-col" columns=10 box=false}}
-						{{#parseJSON '{"index": "10"}'}}
-							{{> demo-box}}
-						{{/parseJSON}}
-					{{/wrapWith}}
-					{{#wrapWith "u-grid-col" columns=2 box=false noMargin=true}}
-						{{#parseJSON '{"index": "2"}'}}
-							{{> demo-box}}
-						{{/parseJSON}}
-					{{/wrapWith}}
-					{{#wrapWith "u-grid-col" columns=11 box=false}}
-						{{#parseJSON '{"index": "11"}'}}
-							{{> demo-box}}
-						{{/parseJSON}}
-					{{/wrapWith}}
-					{{#wrapWith "u-grid-col" columns=1 box=false noMargin=true}}
-						{{#parseJSON '{"index": "1"}'}}
-							{{> demo-box}}
-						{{/parseJSON}}
-					{{/wrapWith}}
-					{{#wrapWith "u-grid-col" columns=12 box=false}}
-						{{#parseJSON '{"index": "12"}'}}
-							{{> demo-box}}
-						{{/parseJSON}}
-					{{/wrapWith}}
-				{{! WrapWith END: Columns }}
-				{{/wrapWith}}
-			{{! WrapWith END: Grid }}
-			{{/wrapWith}}
-			{{! WrapWith END: Segment }}
+	{{! WrapWith START: Section }}
+		{{#wrapWith "u-section" headline="Sticky" bash="install vu sticky"}}
+			<div id="sticky" data-js-module="sticky" class="sticky-content">Sticky Content</div>
+
+			{{#times 5}}
+				{{#with ../rte-bp.single}}
+					{{> c-rte}}
+				{{/with}}
+			{{/times}}
 
 		{{/wrapWith}}
-	{{! WrapWith END: Section }}
+		{{! WrapWith END: Section }}
+
+
 
 	{{/content}}
 {{/extend}}

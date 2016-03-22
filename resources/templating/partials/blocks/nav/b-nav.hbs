@@ -12,14 +12,12 @@ Important Notes:
 
 --- }}
 
-
 <div class="b-nav{{#if navClasses}} {{navClasses}}{{/if}}">
 	{{#each sitemap}}
 		<ul class="nav__list">
 			{{#withSort ../pages "data.sortOrder"}}
 				{{#is data.sitemap ../sitemap}}
 					<li class="nav__list-item">
-						{{log ../../../page}}
 						<a href="{{autolink}}" class="nav__link{{#is ../../../page.dest ../this.dest}} is-active{{/is}}">
 							{{data.menuLink}}
 						</a>
