@@ -94,7 +94,6 @@ module.exports = function(grunt) {
 		'concurrent:syncing', 
 		'sassGlobber:dist',
 		'sass:dev',
-		'sass:universal',
 		'postcss:dev',
 		'combine_mq',
 		'cssmin',

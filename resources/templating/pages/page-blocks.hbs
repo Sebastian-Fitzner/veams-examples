@@ -1,0 +1,25 @@
+---
+title: Veams - A System to Build Scalable Web Apps and HTML5 Web Interfaces.
+lead: Components and utilities built with Veams.
+menuLink: Blocks
+sortOrder: 03
+sitemap: navigation
+---
+
+{{#extend "lyt-default"}}
+	{{#content "main"}}
+
+	{{! WrapWith START: Section }}
+		{{#wrapWith "u-section" headline="Overlay" bash="install vb overlay"}}
+		{{! WrapWith START: Segment }}
+			{{#wrapWith "u-segment" headline="CTA triggering Overlay" centered=true}}
+				{{#with cta-bp.advanced}}
+					{{> c-cta}}
+				{{/with}}
+			{{/wrapWith}}
+		{{! WrapWith END: Segment }}
+		{{/wrapWith}}
+	{{! WrapWith END: Section }}
+
+	{{/content}}
+{{/extend}}
