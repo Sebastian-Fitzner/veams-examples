@@ -29,6 +29,14 @@ EVENTS.equalizer = {
 	render: 'equalizer:render'
 };
 
+/**
+ * Events Accordion
+ */
+EVENTS.accordion = {
+	openAll: 'accordion:openAll',
+	closeAll: 'accordion:closeAll'
+};
+
 // @INSERTPOINT :: @ref: js-events
 
 export default EVENTS;

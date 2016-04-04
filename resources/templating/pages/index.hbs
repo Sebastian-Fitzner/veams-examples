@@ -9,8 +9,13 @@ sitemap: navigation
 {{#extend "lyt-default"}}
 	{{#content "main"}}
 
-
 	{{! WrapWith START: Section }}
+		{{#wrapWith "u-section" headline="Accordion" bash="install vc accordion"}}
+			{{> demo-accordion }}
+		{{/wrapWith}}
+		{{! WrapWith END: Section }}
+
+		{{! WrapWith START: Section }}
 		{{#wrapWith "u-section" headline="Article" bash="install vc article"}}
 			{{> demo-article }}
 		{{/wrapWith}}

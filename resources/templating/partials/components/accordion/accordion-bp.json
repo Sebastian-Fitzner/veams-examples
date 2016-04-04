@@ -1,0 +1,30 @@
+{
+	"simple": {
+		"accordionOptions": {
+			"contextClass": "default",
+			"classes": "is-bg-highlight-1",
+			"jsOptions": [
+				{
+					"jsKey": "",
+					"jsValue": ""
+				}
+			]
+		}
+	},
+	"custom": {
+		"accordionOptions": {
+			"contextClass": "default",
+			"classes": false,
+			"jsOptions": [
+				{
+					"jsKey": "openIndex",
+					"jsValue": "0"
+				},
+				{
+					"jsKey": "singleOpen",
+					"jsValue": "true"
+				}
+			]
+		}
+	}
+}

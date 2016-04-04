@@ -1,6 +1,6 @@
 # veams-examples
 
-Current version="0.0.7"
+Current version="0.0.8"
 
 ## Requirements For Frontend Development
 

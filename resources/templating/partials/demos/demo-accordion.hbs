@@ -1,0 +1,66 @@
+{{! WrapWith START: Segment }}
+{{#wrapWith "u-segment" headline="Default accordion" centered=true}}
+	{{#with accordion-bp.simple}}
+	{{! WrapWith START: Accordion }}
+		{{#wrapWith "c-accordion"}}
+		{{! WrapWith START: Item }}
+			{{#wrapWith "c-accordion__item" accItemId="test-1" accButton="Item 1"}}
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid assumenda, ducimus facilis inventore iste labore laborum libero nam necessitatibus neque nulla numquam perspiciatis rem, repudiandae sed soluta veniam vero.
+			{{/wrapWith}}
+			{{#wrapWith "c-accordion__item" accItemId="test-2" accButton="Item 2"}}
+				{{> c-rte ../../../rte-bp.single}}
+			{{/wrapWith}}
+		{{! WrapWith END: Item }}
+		{{/wrapWith}}
+	{{! WrapWith END: Accordion }}
+	{{/with}}
+{{/wrapWith}}
+{{! WrapWith END: Segment }}
+
+{{! WrapWith START: Segment }}
+{{#wrapWith "u-segment" headline="Customized accordion" centered=true}}
+
+	{{#with accordion-bp.custom}}
+	{{! WrapWith START: Accordion }}
+		{{#wrapWith "c-accordion" jsOptions=this.accordionOptions.jsOptions}}
+		{{! WrapWith START: Item }}
+			{{#wrapWith "c-accordion__item" accItemId="test-3" accButton="Item 3"}}
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid assumenda, ducimus facilis inventore iste labore laborum libero nam necessitatibus neque nulla numquam perspiciatis rem, repudiandae sed soluta veniam vero.
+			{{/wrapWith}}
+			{{#wrapWith "c-accordion__item" accItemId="test-4" accButton="Item 4"}}
+				{{> c-rte ../../../rte-bp.single}}
+			{{/wrapWith}}
+		{{! WrapWith END: Item }}
+		{{/wrapWith}}
+	{{! WrapWith END: Accordion }}
+	{{/with}}
+{{/wrapWith}}
+
+{{#wrapWith "u-segment" centered=true}}
+	{{#parseJSON '{
+		"ctaContent": "Close all items",
+		"ctaJsModule": true,
+		"jsOptions": [
+			{
+				"jsKey": "globalEvent",
+				"jsValue": "accordion:closeAll"
+			}
+		]
+	}'}}
+		{{> c-cta}}
+	{{/parseJSON}}
+
+	{{#parseJSON '{
+		"ctaContent": "Open all items",
+		"ctaJsModule": true,
+		"jsOptions": [
+			{
+				"jsKey": "globalEvent",
+				"jsValue": "accordion:openAll"
+			}
+		]
+	}'}}
+		{{> c-cta}}
+	{{/parseJSON}}
+{{/wrapWith}}
+{{! WrapWith END: Segment }}

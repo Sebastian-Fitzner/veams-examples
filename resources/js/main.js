@@ -8,6 +8,7 @@ import Slider from './modules/slider/slider';
 import Overlay from './modules/overlay/overlay';
 import Equalizer from './modules/equalizer/equalizer';
 import Sticky from './modules/sticky/sticky';
+import Accordion from './modules/accordion/accordion';
 
 // @INSERTPOINT :: @ref: js-import
 
@@ -63,7 +64,7 @@ class Core {
 	render(context) {
 
 		// I am lazy ...
-		$('pre code', context).each(function(i, block) {
+		$('pre code', context).each(function (i, block) {
 			let height = $(this).outerHeight(),
 				heightMax = 230;
 
@@ -74,7 +75,7 @@ class Core {
 			}
 		});
 
-		$('[data-js-atom="toggle-code"]', context).on('click', function() {
+		$('[data-js-atom="toggle-code"]', context).on('click', function () {
 			let el = $(this).prev('code'),
 				elData = el.data('max-height');
 
@@ -119,13 +120,23 @@ class Core {
 			domName: 'equalizer',
 			module: Equalizer,
 			render: false,
-			cb: function(module, options) {
+			cb: function (module, options) {
 				if (options && options.delayInit) {
-					$(window).load(function() {
+					$(window).load(function () {
 						module._reinit(module);
 					});
 				}
 			},
+			context: context
+		});
+
+
+		/**
+		 * Init Accordion
+		 */
+		Helpers.loadModule({
+			domName: 'accordion',
+			module: Accordion,
 			context: context
 		});
 
@@ -134,7 +145,7 @@ class Core {
 	}
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
 	let core = new Core();
 
 	/**
